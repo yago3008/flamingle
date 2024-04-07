@@ -1,0 +1,116 @@
+
+
+#home-img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/home.png');
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.6); 
+    z-index: -1;
+    object-fit: cover;
+}
+
+#home-content {
+    color: #fd8fd3;
+}
+
+#btn-home {
+    background-color: var(--light-grey); 
+    border: var(--light-grey); 
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+#btn-home:hover {
+    background-color: var(--light-pink);
+}
+
+@media (max-width: 800px) {
+    #nav-computer {
+        display: none;
+    }
+    #home {
+        flex-direction: column;
+        gap: 20px;
+    }
+    #home-title{
+        font-size: var(--h1-font-size);
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    #input-container {
+        width: 250px
+    }
+    #about {
+        gap: 5%;
+        flex-direction: column;
+        height: 70vh;
+    }
+    #about-img {
+        width: 100%;
+        margin-top: 20px;
+    }
+    #about-text h3 {
+        font-size: var(--h3-font-size);
+    }
+    #about-text a, p {
+        font-size: var(--p-font-size);
+    }
+} 
+
+@media (min-width: 800px) and (max-width: 900px) {
+    #nav-computer {
+        display: none;
+    }
+    #home {
+        flex-direction: column;
+        gap: 20px;
+    }
+    #home-title{
+        font-size: var(--h1-font-size);
+    }
+    #input-container {
+        width: 250px
+    }
+    #about {
+        gap: 5%;
+        flex-direction: column;
+        height: 80vh;
+    }
+    #about-img {
+        width: 100%;
+        margin-top: 35px;
+    }
+    #about-text h3 {
+        font-size: var(--h3-font-size);
+    }
+    #about-text a, p {
+        font-size: var(--p-font-size);
+    }
+}
+
+@media (min-width: 900px) {
+    #nav-mobile {
+        display: none;
+    }
+    #home {
+        flex-direction: row;
+        gap: 30%;
+    }
+    #home-title{
+        font-size: var(--max-font-size);
+    }
+    #input-container {
+        width: 280px
+    }
+    #about {
+        gap: 5%;
+        height: 70vh;
+    }
+    #about-img {
+        width: 50%;
+    }
+}
+
